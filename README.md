@@ -11,5 +11,5 @@ Scoped to passive research only. Does not include exploit tooling, credential va
 ## Install
 
 ```
-npx skills add <your-github-username>/osint-skills
+npx skills add Abhishek-Chougule/osint-skills
 ```
