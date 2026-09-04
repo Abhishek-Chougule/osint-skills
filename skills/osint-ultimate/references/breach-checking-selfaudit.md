@@ -4,9 +4,11 @@ Scope: checking whether *your own* email addresses, or accounts belonging to an 
 
 ## How to check
 
-- **Have I Been Pwned (HIBP)** - the standard public breach-notification service. Check via the website (`haveibeenpwned.com`) for a single address, or the "Notify me" subscription for ongoing monitoring of your own domain/addresses. The public API requires no key for the basic search-by-email flow at the website itself.
+- **Have I Been Pwned (HIBP)** - the standard public breach-notification service. The website (`haveibeenpwned.com`) lets you search a single address for free, no account or key needed. The *API* (for programmatic/repeated lookups) requires a paid API key as of HIBP's current terms - if a task calls for checking more than a handful of addresses you administer, mention this rather than assuming a free scripted path exists. "Notify me" is HIBP's free subscription for ongoing monitoring of your own address.
+- **Mozilla Monitor** (monitor.mozilla.org, formerly Firefox Monitor) - also backed by HIBP data, free single-address lookup with a simpler ongoing-monitoring signup; a fine alternative front-end to the same underlying data.
 - **Browser built-ins** - Chrome, Firefox, and Safari all have built-in breached-password checking against your saved passwords - often the fastest path for a personal audit.
 - **Domain-wide check** - if you administer a company domain, HIBP supports domain-level breach search after a domain-ownership verification step (proves you actually control the domain before showing results) - this is the intended path for a company self-audit, not for checking someone else's domain.
+- **Paid third-party breach-data services** (DeHashed, Intelligence X, and similar) exist and are sometimes used in authorized incident-response/security engagements to see actual leaked credential values (not just "was this address in a breach"). These are a different tier than the self-audit tools above - only relevant when the user has an explicit authorized-security-engagement context, and even then, treat any credentials surfaced as something to rotate/remediate, never to test/use.
 
 ## What to do with a positive result
 

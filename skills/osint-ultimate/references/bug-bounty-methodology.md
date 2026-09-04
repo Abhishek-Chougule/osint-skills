@@ -21,8 +21,8 @@ Rough allocation that scales with engagement length - adjust to the program's si
 ## 3. Recon pipeline (passive - see `domain-infra-recon.md` for technique detail)
 
 1. **Seed discovery** - root domains from scope, WHOIS/RDAP, public records for the org.
-2. **Asset expansion** - certificate transparency, Wayback CDX, DNS records - build a list of subdomains/apps.
-3. **Enrichment** - for each live asset: technology fingerprint, response headers, publicly-documented API surfaces (published OpenAPI/Swagger docs the org itself links to - not guessed paths).
+2. **Asset expansion** - certificate transparency, ASN/IP-range ownership, Shodan/Censys passive lookups, Wayback CDX, DNS records - build a list of subdomains/apps (see `domain-infra-recon.md`).
+3. **Enrichment** - for each live asset: technology fingerprint, response headers, publicly-documented API surfaces (published OpenAPI/Swagger docs the org itself links to - not guessed paths), and search-dorking for publicly indexed docs/pages (`search-dorking-and-document-metadata.md`).
 4. **Triage** - which assets look highest-value (auth surfaces, anything handling user data) vs. low-value (static marketing pages) - this determines where you spend manual testing time, which happens outside this skill.
 5. **Reporting** - see below.
 
