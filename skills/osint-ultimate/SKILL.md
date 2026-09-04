@@ -1,6 +1,6 @@
 ---
 name: osint-ultimate
-description: Comprehensive OSINT (open-source intelligence) toolkit covering domain/infrastructure recon, bug-bounty scoping and passive reconnaissance methodology, social media investigation, image/geolocation verification, corporate and business research, and professional reporting. Use whenever the user wants to research a domain, company, or public online footprint, plan the recon phase of an authorized bug-bounty or pentest engagement, verify a claim or image using OSINT techniques, or write up findings in a professional report. Also use for "digital footprint audit" requests on the user's own accounts.
+description: Comprehensive OSINT (open-source intelligence) toolkit covering domain/infrastructure recon (WHOIS/RDAP, DNS, certificate transparency, ASN/IP-range ownership, Shodan/Censys passive lookups), bug-bounty scoping and passive reconnaissance methodology, search-engine dorking and document-metadata forensics, social media investigation and cross-platform username verification, image/video geolocation verification (Bellingcat-style), corporate and business research (SEC/company-registry filings, ownership structure, employee/LinkedIn research), breach self-audit, email-authentication (SPF/DKIM/DMARC) posture auditing, and professional report writing. Use whenever the user wants to research a domain, IP range, company, username, or public online footprint; plan the recon phase of an authorized bug-bounty or pentest engagement; run a Google/search-engine dork or pull metadata from a public document; check public breach exposure; audit a domain's email-authentication records; verify a claim, photo, or video using OSINT techniques; or write up findings in a professional report. Trigger this for phrasing like "digital footprint audit," "recon on this domain," "who owns this company/IP," "find their public social accounts," or "check if my email's been breached," including when the target is the user's own accounts or organization.
 ---
 
 # OSINT Ultimate
@@ -20,11 +20,12 @@ Read the relevant reference file(s) based on the task - don't load all of them f
 
 | Task | Reference |
 |---|---|
-| WHOIS/DNS history, subdomain discovery (passive sources only), tech-stack fingerprinting, certificate transparency | `references/domain-infra-recon.md` |
+| WHOIS/DNS history, subdomain discovery (passive sources only), ASN/IP-range ownership, Shodan/Censys passive lookups, tech-stack fingerprinting, certificate transparency | `references/domain-infra-recon.md` |
 | Scoping a bug-bounty or pentest engagement, passive recon methodology, time-budgeting, findings severity, write-up structure | `references/bug-bounty-methodology.md` |
-| Investigating/verifying public social media accounts, sourcing claims, sock-puppet ethics, platform-specific search techniques | `references/social-media-osint.md` |
-| Reverse image search, EXIF metadata, geolocation-from-photo verification (Bellingcat-style) | `references/image-geolocation-osint.md` |
-| Company registries, SEC filings, ownership structure, M&A/vendor due diligence | `references/corporate-business-research.md` |
+| Google/Bing dorking, cached/archived page retrieval, extracting metadata (author, software, revision history) from public PDFs/Office docs | `references/search-dorking-and-document-metadata.md` |
+| Investigating/verifying public social media accounts, cross-platform username enumeration, sourcing claims, sock-puppet ethics, platform-specific search techniques | `references/social-media-osint.md` |
+| Reverse image search, EXIF metadata, geolocation-from-photo/video verification (Bellingcat-style) | `references/image-geolocation-osint.md` |
+| Company registries, SEC filings, ownership structure, employee/LinkedIn research, M&A/vendor due diligence | `references/corporate-business-research.md` |
 | Checking your *own* email/accounts against public breach data | `references/breach-checking-selfaudit.md` |
 | Public email-security posture audit (SPF/DKIM/DMARC) for a domain you own or are assessing with authorization | `references/email-security-audit.md` |
 | Structuring findings into a client- or program-ready report | `references/reporting-templates.md` |

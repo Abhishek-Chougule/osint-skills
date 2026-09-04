@@ -25,7 +25,7 @@ Scope: researching organizations, ownership structures, and public filings for d
 
 1. Legal entity verification - does the registered name/jurisdiction match what the vendor represents?
 2. Financial health signals - filed financials if public, or indirect signals (job posting volume/velocity, glassdoor/employee review trends, news of layoffs or funding rounds) if private.
-3. Key people - leadership bios, any past regulatory or legal issues tied to named individuals *in their professional/corporate capacity* (this file doesn't cover personal-life research on individuals - see the private-individual guardrail in `social-media-osint.md`).
+3. Key people - leadership bios (company site, public LinkedIn, press coverage), any past regulatory or legal issues tied to named individuals *in their professional/corporate capacity* (this file doesn't cover personal-life research on individuals - see the private-individual guardrail and the LinkedIn/employee-research section in `social-media-osint.md`).
 4. Technology footprint (see `domain-infra-recon.md`) - informs both security posture questions to ask them and integration complexity.
 5. Public sentiment - review aggregators, news, social mentions - flag single-source claims as unverified.
 

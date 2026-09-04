@@ -15,6 +15,20 @@ Scope: verifying claims, sourcing stories, researching organizations' public pre
 - **Reverse-searching profile photos**: see `image-geolocation-osint.md` - useful for spotting fake/stolen-photo accounts (a common inauthentic-account signal), not for identifying a real person from a photo.
 - **Metadata on posts**: timestamps, geotags the poster themselves attached (for verifying *when/where an event happened*, e.g. journalism fact-checking), language/timezone clues in posting patterns for authenticity assessment.
 
+## Cross-platform username enumeration
+
+For checking whether a *handle* (a brand name, a claimed alias, a suspected sock puppet) is registered across many platforms - not for building a profile of a private person:
+
+- Tools like Sherlock or WhatsMyName check a given username against hundreds of platforms and report where it's registered - all via each platform's normal "does this username exist" response, nothing beyond a public page fetch per platform.
+- Legitimate uses: confirming your own brand's handle isn't squatted elsewhere, checking whether a suspicious account's claimed username also exists (consistently or inconsistently) on other platforms as an authenticity signal, or tracing a consistent alias used across a scam/impersonation campaign.
+- The same private-individual guardrail above applies: running this against a specific named private person to compile "everywhere they have an account" is the dossier-building pattern, not brand/authenticity verification - decline and redirect the same way.
+
+## Professional/employee research (LinkedIn and similar)
+
+- Public LinkedIn company pages, employee counts, and individually-public job titles are a normal input to vendor due diligence (see `corporate-business-research.md`) and to bug-bounty/pentest social-engineering-*awareness* write-ups (describing exposure, not exploiting it).
+- Stick to what the person made public in their *professional* capacity (title, employer, professional bio) for the purpose of a stated business task (org-chart mapping, confirming a claimed employer, vendor headcount signal). Aggregating a named employee's full public profile beyond that professional context, or contacting them, crosses back into the private-individual guardrail above.
+- LinkedIn's own search and a search engine's `site:linkedin.com/in "Company Name"` dork (see `search-dorking-and-document-metadata.md`) are the standard passive routes - no scraping tooling that evades platform rate limits or ToS.
+
 ## Platform-specific public search
 
 - Most platforms' own advanced search (date ranges, from:account, near:location for geotagged public posts) is the first stop - it's the platform surfacing its own indexed public content.
